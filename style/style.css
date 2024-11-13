@@ -1,0 +1,860 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.backtoup
+{
+    font-size: 2rem;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: white;
+    padding: 10px;
+}
+.backtoup:hover
+{
+   background:#53CD76 ;
+   color: #f9f9f9;
+}
+
+.bactoup
+{
+    
+    color: #000000;
+}
+header
+{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav
+{
+    background-color: #191919c4;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 0 40px;
+}
+.navbar img
+{
+    margin-left: 5%; 
+}
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+.navbar ul li a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: calibri;
+    font-weight: bold;
+}
+.navbar ul li ::before
+{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #53CD76;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::before
+{
+    width: 100%;
+}
+/* banner */
+.display
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/classtech.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.banner
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.banner h1
+{
+    font-size: 35px;
+    margin-top: 80px;
+    color: #53CD76;
+    transition: color .2s;
+}
+.banner h1:hover
+{
+    color: white;
+    font-size: 40px;
+}
+.banner p
+{
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 25px;
+    font-family: calibri;
+}
+.banner button
+{
+    width: 300px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #53CD76;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.banner  span
+{
+    background: #53CD76;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner button:hover span
+{
+    width: 100%;
+}
+/* about-us */
+.about
+{
+    background: #191919;
+    width: 100%;
+    padding: 78px 0px;
+}
+.about img
+{
+    height: auto;
+    width: 420px;
+}
+.about-text
+{
+    width: 550px;
+}
+.main
+{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1
+{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5
+{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-family: calibri;
+}
+.about-text span
+{
+    color: #53CD76;
+}
+.about-text p
+{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: calibri;
+    margin-bottom: 45px;
+}
+.main button
+{
+    background: #53CD76;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 13px;
+    border-radius: 30px;
+    transition: .5s;
+    text-decoration: none;
+}
+.main button:hover
+{
+    background: transparent;
+    border: 2px solid #53CD76;
+    cursor: pointer;
+}
+/* program overview */
+.overview
+{
+    width: 100%;
+    background: #5058943f;
+    padding: 5% 10%;
+}
+.overview .overviewCont h1
+{
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /* margin-top: 15px; */
+    font-size: 2rem;
+    color: #53CD76;
+    font-family: calibri;
+    margin-bottom: 20px;
+
+}
+.overview .overviewCont h4
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.overview .overviewCont p
+{
+    font-family: calibri;
+    font-size: 1.1rem;
+    line-height: 20px;
+    text-align: center;
+}
+.overview .hpoint h2
+{
+    text-align: center;
+    font-family: Calibri;
+    margin: 30px auto;
+}
+.overview .subdiv
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    margin: 30px 20px;
+}
+.subdiv img
+{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    /* backdrop-filter: blur(20px); */
+    transition: .5s;
+    border-radius: 10px;
+}
+.subdiv img:hover
+{
+    width: 100%;
+    height: 250px;
+}
+.subdiv h3
+{
+    margin: 10px 0;
+}
+.subdiv hr
+{
+    margin: 10px 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 10px;
+    background: #53CD76;
+    border: none;
+}
+.overview .subdiv h3
+{
+    font-family: calibri;
+}
+.overview .subdiv li
+{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family: calibri;
+    line-height: 25px;
+    list-style: none;
+}
+/* curriculum */
+.curriculum
+{
+    background: #53CD76;
+    width: 100%;
+    padding: 5% 10%;
+
+}
+.curriculum .headcurr h1
+{
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: calibri;
+}
+.curriculum .headcurr p
+{
+    font-family: calibri;
+    font-size: 1.1rem;
+    line-height: 20px;
+    text-align: center;
+}
+.curriculum .subhead
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding: 40px;
+}
+.curriculum .subhead .section h1
+{
+    text-align: center;
+    font-family: Calibri;
+    margin: 30px auto;
+}
+.curriculum .subhead .section li
+{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family: calibri;
+    text-align: center;
+    list-style: none;
+}
+.curriculum .subhead img
+{
+    width: 100%;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(60, 60, 60, 0.477);
+    object-fit: cover;
+    transition: .5s;
+}
+.curriculum .subhead img:hover
+{
+    height: 250px;
+    box-shadow: 0 0 15px #b8f7cab7;
+}
+/* Why Choose Us */
+.whyus
+{
+    background: rgb(240, 247, 252);
+    width: 100%;
+    padding: 5% 10%;
+}
+.whyus .hwhyus
+{
+   margin-bottom: 40px;
+}
+.whyus .hwhyus h1
+{
+    color: #53CD76;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: calibri;
+}
+.whyus .hwhyus p
+{
+    font-family: calibri;
+    font-size: 1.1rem;
+    line-height: 20px;
+    text-align: center;
+}
+.bodywhyus
+{
+    width: 100%;
+}
+.bodywhyus
+{
+    display: flex;
+    padding: 5% 10%;
+    column-gap: 40px;
+    align-items: center;
+}
+.bodywhyus img
+{
+    width: 500px;
+    height: 430px;
+    border: 1px solid #53CD76;
+    border-radius: 10px;
+}
+.bodywhyus .cont h1
+{
+    font-family: calibri;
+    margin: 10px 0;
+    color: #53CD76;
+}
+.bodywhyus .cont p
+{
+    font-family: calibri;
+    /* margin-bottom: 10px; */
+}
+/* extra */
+.extra
+{
+    margin: 20px 10%;
+    padding: 20px;
+    width: 100%;
+}
+.extra h3
+{
+    font-size: 1.5rem;
+    color: #53CD76;
+    margin-bottom: 10px;
+    font-family: calibri;
+}
+.extra ul
+{
+    font-size: 1.1rem;
+    font-family: calibri;
+    line-height: 30px;
+}
+/* table */
+.hold .tablehead
+{
+    margin: 40px 0;
+}
+.hold .tablehead h1
+{
+    font-family: calibri;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #53CD76;
+    margin-bottom: 10px;
+}
+.hold .tablehead p
+{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: calibri;
+}
+.hold .table table
+{
+    background: #a1ffbc;
+    border-collapse: collapse;
+    width:100%;
+    height: 300px;
+}
+table, th, tr, td
+{
+    border: 1px solid black;
+    font-family: calibri;
+    /* border-radius: 20px; */
+}
+.table th
+{
+    font-size: 1.5rem;
+}
+.table tr, td
+{
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+/* contact-us */
+.contact
+{
+    background: linear-gradient( rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.632));
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact .content span
+{
+    color: #53CD76;
+}
+.contact .content p
+{
+    font-weight: 300px;
+    color: #fff;
+    font-family: calibri;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo p
+{
+    font-family: calibri;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #53CD76;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #333;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #53CD76;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #53CD76;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+footer
+{
+    display: flex;
+    background: black;
+}
+footer span
+{
+    background: #53CD76;
+    color: #fff;
+    font-family: calibri;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+footer marquee
+{
+    color: #fff;
+    font-family: calibri;
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px)
+{
+.navbar ul
+{
+    display: none;
+}
+.banner h1
+{
+    font-size: 25px;
+    margin-top: 70px;
+    color: #53CD76;
+    transition: color .2s;
+}
+.banner h1:hover
+{
+    color: white;
+    font-size: 30px;
+}
+.banner p
+{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: calibri;
+    padding: 0px 15px;
+}
+.banner button
+{
+    width: 200px;
+}
+.about
+{
+    background: #191919;
+    width: 100%;
+}
+.about-text
+{
+    width: 400px;
+    margin-top: 10px;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+}
+.overview .overviewCont h1
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+.overview .overviewCont h4
+{
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.overview .overviewCont p
+{
+    font-family: calibri;
+    font-size: 1.0rem;
+    line-height: 20px;
+    text-align: center;
+}
+.overview .hpoint h2
+{
+    font-size: 1.5rem;
+
+}
+.overview .subdiv
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.subdiv h3
+{
+    margin: 10px 0;
+}
+.overview .subdiv h3
+{
+    font-size: 1.1rem;
+}
+.overview .subdiv li
+{
+
+    font-size: 1.0rem;
+}
+.curriculum .headcurr h1
+{
+    font-size: 1.5rem;
+}
+.curriculum .subhead
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+.curriculum .subhead .section h1
+{
+    font-size: 1.3rem;
+}
+.curriculum .subhead .section li
+{
+    font-family: calibri;
+}
+.curriculum .subhead img
+{
+    width: 100%;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(60, 60, 60, 0.477);
+    object-fit: cover;
+    transition: .5s;
+}
+.curriculum .subhead img:hover
+{
+    height: 250px;
+    box-shadow: 0 0 15px #b8f7cab7;
+}
+.whyus
+{
+    background: rgb(240, 247, 252);
+    width: 100%;
+    padding: 5% 5%;
+}
+.whyus .hwhyus
+{
+   margin-bottom: 40px;
+}
+.whyus .hwhyus h1
+{
+    font-size: 1.5rem;
+}
+.bodywhyus
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bodywhyus img
+{
+    width: 400px;
+    height: 400px;
+}
+.extra
+{
+    margin: 20px 8%;
+}
+.extra ul
+{
+    line-height: 25px;
+}
+.hold .tablehead
+{
+    margin: 40px 0;
+}
+.hold .tablehead h1
+{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.hold .tablehead p
+{
+    font-size: 1.1rem;
+}
+.hold .table table
+{
+    background: #a1ffbc;
+    border-collapse: collapse;
+    width: 70px;
+    height: 280px;
+}
+table, th, tr, td
+{
+    border: 1px solid black;
+    font-family: calibri;
+}
+.table th
+{
+    font-size: 1.2rem;
+}
+.table tr, td
+{
+    font-size: 1.0rem;
+    padding: 0 5px;
+}
+.contact
+{
+    padding: 50px;
+}
+.container
+{
+    flex-direction: column;
+}
+.container .contactInfo
+{
+    margin-bottom: 40px;
+}
+.container .contactInfo,
+.contactForm
+{
+    width: 100%;
+}
+}
